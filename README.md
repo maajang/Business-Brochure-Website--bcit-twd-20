@@ -1,5 +1,8 @@
 # Business-Brochure-Website--bcit-twd-20
 
+Wireframe: https://imgur.com/a/I8kLmuE
+Mockup: https://invis.io/BSOKH5I5PRN
+
 ## Tai Do
 - Navigation
 - Footer
