@@ -1,18 +1,14 @@
+#menuCheck {
+  display: none;
+}
+
 .menu {
-  display: block;
+  display: none;
   position: relative;
   cursor: pointer;
   z-index: 1;
   height: 5rem;
   width: 5rem;
-}
-
-#menuCheck {
-  display: none;
-
-  &:checked ~ {
-    
-  }
 }
 
 .menu .dot {
@@ -56,14 +52,19 @@ nav {
   font-size: 2rem;
   border-bottom: 3px solid $color-theme;
 
+  > a {
+    display: inline-block;
+    height: 6rem;
+  }
+
   a {
     color: $color-theme;
     text-decoration: none;
   }
 
   ul {
+    display: none;
     padding: 0;
-    display: flex;
     list-style: none;
     color: $color-theme;
     height: 100%;
@@ -84,3 +85,39 @@ nav {
     }
   }
 }
+
+@media only screen and (min-width: 750px) {
+  nav {
+    ul {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .menu {
+    display: block;
+  }
+
+  nav {
+    height: auto;
+    align-items: unset;
+
+    ul {
+      margin: 6rem 0 2rem 0;
+      width: 100%;
+
+      li {
+        a {
+          padding: 0;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// .mobile-nav {
+//   display: block;
+// }
