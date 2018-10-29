@@ -17,3 +17,13 @@ Mockup: https://invis.io/BSOKH5I5PRN
 - Menu Page
 - Thank you Page
 - Contact Page
+
+## How to contribute
+
+```
+> git clone https://github.com/maajang/Business-Brochure-Website--bcit-twd-20.git
+> npm run build
+> git add .
+> git commit -m "Your Mess"
+> git push origin master
+```
