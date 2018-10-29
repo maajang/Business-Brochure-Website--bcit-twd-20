@@ -1,0 +1,33 @@
+footer {
+  margin-top: 2.5rem;
+  border-top: 3px solid $color-theme;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+
+  .left-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
+
+    span {
+      font-size: 2.5rem;
+      color: $color-theme;
+    }
+  }
+
+  .right-bar {
+    a {
+      color: $color-theme;
+
+      &:not(:first-child){
+        margin-left: 4rem;
+      }
+
+      i {
+        font-size: 3rem;
+      }
+    }
+  }
+}

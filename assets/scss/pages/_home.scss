@@ -1,0 +1,217 @@
+.intro,
+.try,
+.useful-info {
+  display: flex;
+  min-height: 35rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.intro {
+  a {
+    flex: 0 0 33.33%;
+    background-color: $color-theme;
+    text-decoration: none;
+    transition: all 0.4s;
+    display: block;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:not(:first-child) {
+      border-left: 3px solid white;
+    }
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      display: block;
+    }
+
+    span {
+      height: 20%;
+      color: white;
+      display: block;
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 280%;
+    }
+  }
+}
+
+.try {
+  flex-direction: column;
+
+  h4 {
+    color: $color-theme;
+    font-size: 2.5rem;
+  }
+
+  .try-gallery {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      flex: 0 0 25%;
+      text-decoration: none;
+      transition: all 0.4s;
+      display: block;
+      height: 20rem;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+      }
+
+      i {
+        display: block;
+        color: $color-theme;
+        text-align: right;
+        font-size: 400%;
+      }
+    }
+  }
+}
+
+.useful-info {
+  justify-content: space-between;
+
+  .testimonial,
+  .what-new,
+  .open-hour {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: $color-theme;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .testimonial {
+    .profile {
+      display: flex;
+      height: 15rem;
+
+      img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .comment {
+        margin-left: 1rem;
+
+        h5 {
+          font-size: 1.5rem;
+          margin: 0 0 1rem 0;
+        }
+      }
+    }
+  }
+
+  .what-new {
+    .article {
+      display: flex;
+      height: 15rem;
+
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+
+      img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .body {
+        margin-left: 1rem;
+
+        h5 {
+          font-size: 1.5rem;
+          margin: 0 0 1rem 0;
+        }
+      }
+    }
+  }
+
+  .open-hour {
+    h4 {
+      text-align: center;
+    }
+
+    .hour-block {
+      border: 4px solid #ce0600;
+      padding: 2.5rem;
+      font-size: 1.5rem;
+      color: $color-theme;
+      margin-left: 2.5rem;
+
+      &:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .intro,
+  .try,
+  .useful-info {
+    flex-direction: column;
+
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .intro a:not(:first-child) {
+    margin-top: 0.5rem;
+    border: none;
+  }
+
+  .try {
+    .try-gallery {
+      flex-direction: column;
+
+      a:not(:first-child){
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  // .useful-info {
+  //   .testimonial {
+  //     .profile {
+  //       height: 15rem;
+
+  //       img {
+  //         height: 100%;
+  //       }
+  //     }
+  //   }
+
+  //   .what-new {
+  //     .article {
+  //       height: 15rem;
+
+  //       img {
+  //         height: 100%;
+  //       }
+  //     }
+  //   }
+  // }
+}

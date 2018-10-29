@@ -1,0 +1,86 @@
+.menu {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  height: 5rem;
+  width: 5rem;
+}
+
+#menuCheck {
+  display: none;
+
+  &:checked ~ {
+    
+  }
+}
+
+.menu .dot {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  height: 2px;
+  width: 65%;
+  background-color: $color-theme;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    height: 2px;
+    width: 100%;
+    background-color: $color-theme;
+    z-index: 10;
+  }
+
+  &::before {
+    top: -0.8rem;
+  }
+
+  &::after {
+    top: 0.8rem;
+  }
+}
+
+nav {
+  display: flex;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  border-bottom: 3px solid $color-theme;
+
+  a {
+    color: $color-theme;
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    color: $color-theme;
+    height: 100%;
+
+    li {
+      a {
+        line-height: 8rem;
+        display: inline-block;
+        height: 100%;
+        padding: 0 2rem;
+        transition: all .2s;
+      }
+
+      &:hover a{
+        background-color: $color-theme;
+        color: white;
+      }
+    }
+  }
+}
