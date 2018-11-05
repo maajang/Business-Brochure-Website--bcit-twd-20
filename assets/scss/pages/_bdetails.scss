@@ -1,0 +1,30 @@
+.content{
+    color: $color-theme;
+    width: 80%;
+
+    h1{
+        font-size: 3.3rem;
+        color: $color-theme;
+    }
+
+    .first-p img{
+     width: 90%;
+    }
+
+    .first-p p{
+        line-height: 2.9rem;
+        font-size: 1.8rem;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        border-right: 3%;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+
+}
