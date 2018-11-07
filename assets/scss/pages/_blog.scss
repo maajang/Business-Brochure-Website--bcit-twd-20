@@ -4,19 +4,24 @@
 }
 .first-part{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 
-.col a{
-  font-size: 3.0rem;
-  color: $color-theme;
-}
+   .col a{
+      font-size: 2.0rem;
+      color: $color-theme;
+    }
 
-.col p{
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+      .col p{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     width: 80%;
-}
+      }
+
+       .col img{
+     width: 100%;
+     height: 50%;
+       }
+
 }
 
  .side-bar{
@@ -27,47 +32,52 @@
  }
 
  .side-bar p{
-     height: 90%;
+     height: 30%;
      padding: 10px;
  }
- 
+//   end of first part
  .second-part{
       display: flex;
+      padding: 30px;
   
   
     .col1 a{
-    font-size: 3.0rem;
-    color: $color-theme;
-  }
+       font-size: 2.0rem;
+       color: $color-theme;
+     }
   
-  .col1 p{
-      font-size: 1.5rem;
-      line-height: 2.2rem;
-      width: 100%;
+     .col1 p{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
   }
+
+  .col1 img{
+      width: 100%;
+      height: 40%;
+  }
+
 }
+
  .side-bar1{
      border: 4px solid $color-theme;
      margin: 40px;   
      padding: 10px;
-     width: 90%;
- }
+     width: 93%;
+ 
  .side-bar1 h1{
      font-size: 2.3rem;
  }
  .mini-a img{
      float: left;
-     width: 50%;
-     height: 70%;
-     padding: 10px;
-     margin: 4px;
-     
+     padding: 5px;
+     margin: 4px; 
+     width: 40%;
  }
  .mini-a{
      padding: 10px;
      margin: 4px;
  }
-
+ }
 
 
 
