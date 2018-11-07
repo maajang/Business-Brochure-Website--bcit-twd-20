@@ -11,7 +11,15 @@
 }
 .item{
     border:4px solid $color-theme;
-    
+    position:relative;
+   
+
+}
+.more{
+    background-color:$color-theme ;
+    position:absolute;
+    top:30px;
+    right:30px;
 }
 img{
     object-fit:cover;
