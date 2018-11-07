@@ -323,8 +323,8 @@ footer .right-bar a i {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 90px;
-  grid-row-gap: 100px;
+  grid-column-gap: 130px;
+  grid-row-gap: 150px;
 }
 
 .item {
