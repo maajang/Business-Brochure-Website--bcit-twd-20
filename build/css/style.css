@@ -359,29 +359,31 @@ footer .right-bar a i {
 }
 
 .first-section {
-  color: #ce0600;
   background-color: white;
 }
 .first-section h1 {
   font-size: 4.8rem;
   font-weight: bold;
   text-align: center;
+  color: #ce0600;
 }
 .first-section h2 {
   font-size: 3.5em;
 }
 .first-section p {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
+  color: #000000;
 }
 .first-section .sect-01 img {
   float: right;
-  width: 20%;
+  width: 30%;
 }
 .first-section .sect-01 p {
   line-height: 3.5rem;
+  color: #000000;
 }
 .first-section .form-container {
-  border: 5px solid #ce0600;
+  border: 5px solid #000000;
   padding: 20px;
 }
 .first-section label {
@@ -397,7 +399,7 @@ footer .right-bar a i {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 4px solid #ce0600;
+  border: 2px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -415,12 +417,12 @@ footer .right-bar a i {
 .first-section select {
   width: 33.5%;
   height: 40px;
-  border: 4px solid #ce0600;
+  border: 2px solid #000000;
 }
 .first-section text {
   width: 25%;
-  background-color: #ce0600;
-  color: white;
+  background-color: #000000;
+  color: #000000;
   align-content: center;
   margin: 20px;
   padding: 30px;
@@ -433,13 +435,13 @@ footer .right-bar a i {
 .first-section select {
   width: 33.5%;
   height: 40px;
-  border: 4px solid #ce0600;
+  border: 2px solid #000000;
 }
 .first-section textarea {
   width: 80%;
   height: 200px;
   display: inline-block;
-  border: 4px solid #ce0600;
+  border: 2px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -453,62 +455,85 @@ footer .right-bar a i {
   justify-content: space-between;
 }
 .first-part .col a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ce0600;
 }
 .first-part .col p {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
   width: 80%;
+  color: #000000;
+}
+.first-part .col img {
+  width: 80%;
+  height: 50%;
 }
 
 .side-bar {
-  border: 4px solid #ce0600;
-  width: 80%;
-  margin: 40px;
-  padding: 10px;
+  border: 2px solid #000000;
+  margin: 50px;
+  padding: 30px;
+  width: 68%;
+  padding-left: 30px;
+}
+
+.side-bar h1 {
+  font-size: 2.7rem;
 }
 
 .side-bar p {
-  height: 90%;
   padding: 10px;
+  color: #000000;
+}
+
+.cat img {
+  width: 100%;
+}
+
+.side-bar1 h1 {
+  font-size: 3.2rem;
 }
 
 .second-part {
   display: flex;
 }
 .second-part .col1 a {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ce0600;
 }
 .second-part .col1 p {
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: #000000;
+}
+.second-part .col1 img {
   width: 100%;
+  height: 40%;
 }
 
 .side-bar1 {
-  border: 4px solid #ce0600;
+  border: 2px solid #000000;
   margin: 40px;
   padding: 10px;
   width: 90%;
 }
-
-.side-bar1 h1 {
+.side-bar1 .side-bar1 h1 {
   font-size: 2.3rem;
 }
-
-.mini-a img {
+.side-bar1 .mini-a img {
   float: left;
-  width: 50%;
-  height: 70%;
+  padding: 5px;
+  margin: 4px;
+  width: 40%;
+}
+.side-bar1 .mini-a {
   padding: 10px;
   margin: 4px;
 }
-
-.mini-a {
-  padding: 10px;
-  margin: 4px;
+.side-bar1 .mini-a p {
+  color: #000000;
+  padding: 0.5px;
+  margin: 3px;
 }
 
 .content {
@@ -520,19 +545,54 @@ footer .right-bar a i {
   color: #ce0600;
 }
 .content .first-p img {
-  width: 90%;
+  width: 80%;
 }
 .content .first-p p {
-  line-height: 2.9rem;
-  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+  color: #000000;
 }
 .content .row {
   display: flex;
   justify-content: space-between;
+  border-right: 40px;
+}
+.content .row img {
+  width: 90%;
+  height: 60%;
   border-right: 3%;
 }
-.content .row {
-  width: 100%;
+.content .head h1 {
+  color: #000000;
+  font-size: 2.3rem;
+}
+
+.thank-you {
+  text-align: center;
+  padding: 10px;
+}
+.thank-you button {
+  background-color: #ce0600;
+  padding: 20px;
+  width: 40%;
+}
+.thank-you button a {
+  color: white;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+.thank-you h1 {
+  font-size: 5rem;
+  color: #000000;
+  text-align: center;
+}
+.thank-you img {
+  width: 20%;
+}
+.thank-you p {
+  font-size: 2.9rem;
+  color: #000000;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
