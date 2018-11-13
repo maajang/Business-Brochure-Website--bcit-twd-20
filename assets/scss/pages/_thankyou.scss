@@ -1,0 +1,35 @@
+.thank-you{
+    text-align: center;
+    padding: 10px;
+
+     button{
+        background-color: $color-theme;
+        padding: 20px;
+        width: 40%;
+       
+    }
+
+    button a{
+        color: white;
+        font-size: 4.5em;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 5rem;
+        color: $paragraph-color;
+        text-align: center;
+    }
+
+    img{
+        width: 20%;
+
+    }
+
+    p{
+        font-size: 2.9rem;
+        color: $paragraph-color;
+        text-align: center;
+     
+    }
+}

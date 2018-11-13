@@ -8,22 +8,31 @@
     }
 
     .first-p img{
-     width: 90%;
+     width: 80%;
     }
 
     .first-p p{
-        line-height: 2.9rem;
-        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-size: 1.7rem;
+        color: $paragraph-color;
     }
 
     .row{
         display: flex;
         justify-content: space-between;
+        border-right: 40px;
+    }
+
+
+    .row img{
+        width: 90%;
+        height: 60%;
         border-right: 3%;
     }
 
-    .row{
-        width: 100%;
+    .head h1{
+        color: $paragraph-color;
+        font-size: 2.3rem
     }
 
 
