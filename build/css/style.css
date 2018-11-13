@@ -334,6 +334,7 @@ footer .right-bar a i {
 
 .item img {
   object-fit: cover;
+  width: 100%;
 }
 
 .item h2 {
