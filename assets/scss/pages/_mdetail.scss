@@ -1,0 +1,32 @@
+.menu-detail {
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: $color-theme;
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+  }
+
+  .content {
+    width: 80%;
+    margin: 2rem auto;
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .bottom-navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
