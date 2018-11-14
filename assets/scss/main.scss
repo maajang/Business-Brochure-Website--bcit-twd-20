@@ -1,16 +1,18 @@
 // Base
-@import './base/reset';
 @import './base/variables';
+@import './base/reset';
 @import './base/layout';
 
 // Components
 @import './components/logo';
 @import './components/header';
 @import './components/footer';
+@import './components/button';
 
 // Pages
 @import './pages/home';
 @import './pages/menu';
+@import './pages/mdetail';
 @import './pages/reservation';
 @import './pages/blog';
 @import './pages/bdetails';
