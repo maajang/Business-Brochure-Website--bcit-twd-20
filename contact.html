@@ -27,9 +27,10 @@
                         <span class="dot"></span>
                     </label>
                 </nav>
-
+                <div class = "contact">
                 <h1>Find Us</h1>
                 <div class = "mapaddr">
+                        
                     <div class = "map">
                     <img src="./assets/img/contactmap.png">
                     <p>Bacon ipsum dolor amet doner shank salami tongue pork chop. 
@@ -40,32 +41,46 @@
                     </p>
                     </div>
                     <div class = "ape">  <!--address,phone,email-->
-                        <h2>Address</h2>
+                        <div class="address">
+                        <h2>Address</h2>                      
                         <h4>Cupim andouille venison drumstick. Brisket fatback spare ribs burgdoggen picanha pastrami.</h4>
+                        </div>
+                        <div class="phone">
                         <h2>Phone:</h2>
                         <h4>(604)156-0000</h4>
+                        </div>
+                        <div class = "email">
                         <h2>Email:</h2>
                         <h4>email@email.cc</h4>
+                        </div>
                     </div>
                 </div>
-                <h1>Contact Form</h1>
+                </div>
+              
                     <div class="ContactForm">
-                        <form action="./thank-you.html">
+                            <h1>Contact Form</h1>
+                        <div class="form-container">
+                        <form action="./thank-you.html" method ="POST">
+                            <ul class = "horizontal">
+                                <li>
                         <label for="name">Name:</label>
                         <input type="text"id="firstbox"name="name" required>
-
+                                </li>
+                                <li>
                         <label for="email">Email</label>
                         <input type="email"id="firstbox"email="email" required>
-
+                                </li>
+                                <li>
                         <label for="phone">Phone</label>
                         <input type="tel"id="firstbox"tel="phone"required>
-                        
-                        <label for="comments">Comments</label>
-                        <textarea name="comments" id="comments"></textarea>
+                                </li>
+                            </ul>
+                        <label for="comments" class="sr-only">Comments:</label>
+                        <textarea name="comments" id="comments" placeholder = "Comments:"rows="10"></textarea>
 
                         <input type="submit" id="submit" value ="submit">
-                    </form>
-
+                        </form>
+                        </div>
                     </div>
 
 

@@ -1,0 +1,100 @@
+.mapaddr, .ContactForm, h1{
+    color:$color-theme;
+}
+.contact {
+    margin-top:5em;
+    margin-left:9em;
+}
+.contact h1 {
+    font-size:4em;
+}
+.mapaddr{
+    display:flex;
+    
+}
+.map {
+    width:60%;
+}
+.map img{
+    width:90%
+}
+.ape {
+    width:25%;
+}
+.ape h2{
+    text-align:center;
+    font-size:3em;
+}
+.address h2{
+    margin-top:0;
+}
+.ape h4{
+    text-align:center;
+    padding-bottom:5em;
+}
+.ContactForm h1{
+    text-align:center;
+    font-size:4em;
+}
+.form-container{
+    border:4px solid $color-theme;
+    padding-left:9em;
+    padding-right:9em;
+    padding-bottom:4em;
+}
+
+.horizontal{
+    display:flex;
+    justify-content:space-between;
+    margin:2em;
+    align-items:center;
+    padding-right:2em;
+    list-style:none;
+}
+
+.horizontal label{
+padding-right:1em;
+padding-left:1em;
+}
+#firstbox{
+   height:40px; 
+   width:20em;
+   border:2px solid $color-theme;
+}
+#comments{
+    border:2px solid $color-theme;
+    width:95%;
+    margin:2em;
+}
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0)   
+}
+input[type=submit]{
+    float: right;
+    margin-right:1em;
+    background-color:$color-theme ;
+    color:white;
+    width:5em;
+    font-size:3.3rem;
+    margin-top:-0.5em;
+}
+@media only screen and (max-width:1024px){
+    .horizontal{
+        flex-direction:column;
+    }
+    .horizontal li{
+        padding-bottom:5px;
+    }
+}
+@media only screen and (max-width:750px){
+    .mapaddr{
+       display:block;
+    }
+    
+}
