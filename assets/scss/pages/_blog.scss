@@ -2,58 +2,100 @@
   color: $color-theme
 
 }
+
+// first part section
 .first-part{
     display: flex;
     justify-content: space-between;    
-
+   
    .col a{
-      font-size: 2.0rem;
-      color: $color-theme;
+        font-size: 2.0rem;
+        color: $color-theme;
     }
 
-      .col p{
-    font-size: 1.7rem;
-    line-height: 2.5rem;
-    width: 80%;
-    color: $paragraph-color;
+    .col p{
+       font-size: 1.5rem;
+       line-height: 2.5rem;
+       color: $paragraph-color;
 
-      }
+   }
+    .reviews {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.3rem;
+    
+    i{
+        color: $color-theme;
 
-       .col img{
-     width: 80%;
-     height: 50%;
-       }
+    }
+
+    @media (max-width: 680px) {
+        .reviews{
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .reviews a{
+            padding: 15px;
+        }
+    }
 
 }
 
- .side-bar{
+.side-bar{
     border: 2px solid $paragraph-color;
     margin: 50px;   
     padding: 30px;
     width: 68%; 
-    padding-left: 30px;
-    // float: right; 
- }
+    padding-left: 10px;
 
- .side-bar h1{
+
+  h1{
      font-size: 2.7rem;
  }
 
- .side-bar p{
+  p{
      padding: 10px;
      color: $paragraph-color;
 
  }
+
+ @media (max-width: 790px){
+    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 3px;
+    
+    p, h1{
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+}
+
+}
+
  .cat img{
-     width: 100%;
+    width: 100%;
+}
+
+ @media (max-width: 790px){
+
+        display: block
  }
 
- .side-bar1 h1 {
-     font-size: 3.2rem;
- }
-//   end of first part
+}
+
+
+// second part
  .second-part{
       display: flex;
+      justify-content: space-between;
   
     .col1 a{
        font-size: 2.0rem;
@@ -61,45 +103,91 @@
      }
   
      .col1 p{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
         color: $paragraph-color;
 
-  }
+      }
 
-  .col1 img{
-      width: 100%;
-      height: 40%;
-  }
-
-}
+      .reviews {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.3rem;
+        
+        i{
+            color: $color-theme;
+    
+        }
+    
+        @media (max-width: 680px) {
+            .reviews{
+                width: 100%;
+                font-size: 1.2rem;
+            }
+    
+            .reviews a{
+                padding: 15px;
+            }
+        }
+    
+    }
 
  .side-bar1{
      border: 2px solid $paragraph-color;
      margin: 40px;   
      padding: 10px;
-     width: 90%;
  
- .side-bar1 h1{
-     font-size: 2.3rem;
- }
+      h1{
+        font-size: 2.0rem;
+       }
+ 
  .mini-a img{
      float: left;
-     padding: 5px;
-     margin: 4px; 
-     width: 40%;
- }
- .mini-a{
-     padding: 10px;
-     margin: 4px;
+     width: 30%;
+     padding-right: 15px;
+
+     @media (max-width: 790px){
+         width: 100%;
+         padding: 20px;
+
+     }
  }
 
  .mini-a p{
      color: $paragraph-color;
-     padding: 0.5px;
-     margin: 3px; 
+     padding-top: 0;
+     border: 10px;
+
+     @media (max-width: 790px){
+        width: 100%;
+        padding: 20px;
+
+    }
+    
  }
+
+ @media (max-width: 790px){
+    
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    margin-top: 10px;
+
+    h1{
+        text-align: center;
+    }
+    
+    }
+
+
+}
+
+ @media (max-width: 790px){
+      display: block;
  }
+
+}
 
 
 
