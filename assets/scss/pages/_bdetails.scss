@@ -1,31 +1,70 @@
-.content{
-    color: $color-theme;
-    width: 80%;
 
-    h1{
-        font-size: 3.3rem;
-        color: $color-theme;
-    }
 
-    .first-p img{
-     width: 80%;
-    }
+    .first-p {
 
-    .first-p p{
+        h1{
+            font-size: 3.3rem;
+            color: $color-theme;
+        }    
+
+       p{
         line-height: 2.5rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         color: $paragraph-color;
     }
 
-
-
-
+     .reviews {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        font-size: 1.4rem;
+        
+        i{
+            color: $color-theme;
     
+        }
 
+    }
+
+    @media (max-width: 860px){
+      
+        img{
+            width: 100%;
+        }
+
+        h1{
+            font-size: 2.5rem;
+        }
+       
+        .reviews{
+            width: 100%;
+            font-size: 1.4rem;
+        }
+
+        .reviews a{
+            padding: 15px;
+        }
+       
+    }
 
 }
 
+
+
 // Recent Post Row
+.recent-post{
+    h1{
+        font-size: 3.3rem;
+    }
+
+    @media (max-width: 680px) {
+
+        h1{
+            font-size: 2.4rem;
+        }
+        
+    }
+}
 .recent-post-row{
     display: flex;
     justify-content: space-between;
@@ -36,13 +75,17 @@
 
     h1{
         color: $paragraph-color;
-        font-size: 2.3rem
+        font-size: 2.6rem
     }
 
     @media (max-width: 700px) {
         display: block;
         .head {
             width: 100%;
+        }
+
+        h1{
+            font-size: 1.5rem;
         }
     }
 
