@@ -23,12 +23,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     
     i{
         color: $color-theme;
 
     }
+    
 
     @media (max-width: 680px) {
         .reviews{
