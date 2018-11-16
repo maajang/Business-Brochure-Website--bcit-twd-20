@@ -1,108 +1,147 @@
 
 .first-section{
-    background-color: white;
     
-h1{
- font-size: 4.8rem;
- font-weight: bold;
- text-align: center;
- color: $color-theme;
+    background-color: white;
+
+    h1{
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align: center;
+        color: $color-theme;
+
+        @media (max-width: 700px){
+            font-size: 3.3rem;
+        }
+    }
+ 
 }
 
-h2{
-font-size: 3.5em;
+.sect-01{
+     
+      h2{
+        font-size: 3.5em;
+       
+        @media (max-width: 700px){
+            font-size: 2.3rem;
+        }
+        
+    }
 
-}
+       p{
+         font-size: 1.7rem;
+         line-height: 2;
+         color: $paragraph-color;
+        }
+        
+        img {
+         float: right;
+         width: 30%;
 
-p{
-    font-size: 1.7rem;
-    color: $paragraph-color;
-}
+         @media (max-width: 700px){
+             width: 50%;
+             float: none;
+         }
 
-// first part
-.sect-01 img{
-    float: right;
-    width: 30%;
-}
-.sect-01 p{
-    line-height: 3.5rem;
-    color: $paragraph-color;
-
+        }
 }
 // contact form style
 .form-container{
     border: 5px solid $paragraph-color;
     padding: 20px;
+    height: 100%;
+
+
+      label{
+          padding: 10px 10px 10px 0;
+          font-size: 2.5rem;
+          display: inline-block;
+          width: 100px;
+          margin-bottom: 25px;
+          margin-right: 10px;
+
+        }
+
+
+        input[type=text]{
+            width: 80%;
+            padding: 5px 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid $paragraph-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit]{
+            width: 20%;
+            background-color: $color-theme;
+            color: white;
+            margin: 2px;
+            padding: 5px;
+            padding-bottom: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 2.9rem;
+            margin-right: 70px;
+
+
+            @media (max-width: 600px){
+                font-size: 1.5rem;
+                margin: 1px;
+                padding: 3px;
+            }
+        }
+        select{
+            width: 33.5%;
+            height: 40px;
+            border: 2px solid $paragraph-color;
+        }
+        
+        text{
+            width: 25%;
+            background-color: $paragraph-color;
+            color: $paragraph-color;
+            align-content: center;
+            margin: 20px;
+            padding: 30px;
+            border: none;
+            border-radius: 3px 5px;
+            cursor: pointer;
+            align-items: flex-end;
+            font-size: 3.3rem;
+          
+        }
+        select{
+            width: 33.5%;
+            height: 40px;
+            border: 2px solid $paragraph-color;
+        }
+
+
+        textarea{
+            width: 80%;
+            height: 200px;
+            display: inline-block;
+            border: 2px solid $paragraph-color;
+            ;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 1035px){
+
+            #adults{
+                width: 80%;
+            }
+
+            #children {
+                width: 80%;
+            }
+        }
+
+
+
+
+
 }
-
-label{
-    padding: 12px 12px 12px 0;
-    font-size: 2.3rem;
-    display: inline-block;
-    width: 100px;
-    margin-bottom: 25px;
-    margin-right: 10px;
-
-}
-
-
-input[type=text]{
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 2px solid $paragraph-color;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit]{
-    width: 25%;
-    background-color: $color-theme;
-    color: white;
-    margin: 20px;
-    padding: 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 3.3rem;
-    margin-left: 67%;
-}
-
-select{
-    width: 33.5%;
-    height: 40px;
-    border: 2px solid $paragraph-color;
-} 
-
-text{
-    width: 25%;
-    background-color: $paragraph-color;
-    color: $paragraph-color;
-    align-content: center;
-    margin: 20px;
-    padding: 30px;
-    border: none;
-    border-radius: 3px 5px;
-    cursor: pointer;
-    align-items: flex-end;
-    font-size: 3.3rem;
-  
-}
-
-select{
-    width: 33.5%;
-    height: 40px;
-    border: 2px solid $paragraph-color;
-} 
-
-textarea{
-    width: 80%;
-    height: 200px;
-    display: inline-block;
-    border: 2px solid $paragraph-color;
-    ;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-}
+         
