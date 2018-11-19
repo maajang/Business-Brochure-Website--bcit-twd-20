@@ -1,8 +1,7 @@
 node_modules
 build
-assets/.sass-cache
+*/.sass-cache
 
 yarn.lock
 package-lock.json
 .DS_Store
-
