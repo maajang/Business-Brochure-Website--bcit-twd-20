@@ -25,9 +25,7 @@
     text-align:center;
     font-size:3em;
 }
-.address h2{
-    margin-top:0;
-}
+
 .ape h4{
     text-align:center;
     padding-bottom:2em;
@@ -103,13 +101,31 @@ input[type=submit]{
     }
     .horizontal li{
         padding-bottom:5px;
+        padding-right:20px;
     }
 }
 @media only screen and (max-width:750px){
+    .contact{
+        margin-left:2em;
+    }
+    
     .mapaddr{
        display:block;
     }
-    .form-container{
+    .map{
+        width:100%;
+    }
+    .ape{
+        display:flex;
+        width:100%;
+        justify-content: space-evenly;
+        
+    }
+    .ape h2{
+        font-size:2em;
+    }
+    
+    .form-contact{
         padding-left:1em;
         padding-right:1em;
     }
