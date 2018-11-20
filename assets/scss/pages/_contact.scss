@@ -1,132 +1,159 @@
-.mapaddr, .ContactForm, h1{
-    color:$color-theme;
+.mapaddr,
+h1 {
+  color: $color-theme;
 }
+
 .contact {
-    margin-top:5em;
-    margin-left:9em;
+  margin-top: 5em;
+  margin-left: 9em;
 }
+
 .contact h1 {
-    font-size:4em;
+  font-size: 2.5em;
 }
-.mapaddr{
-    display:flex;
-    
+
+.mapaddr {
+  display: flex;
 }
+
 .map {
-    width:60%;
+  width: 60%;
+
+  p {
+    font-size: 1.5rem;
+  }
 }
-.map img{
-    width:90%
+
+.map img {
+  width: 90%
 }
+
 .ape {
-    width:25%;
-}
-.ape h2{
-    text-align:center;
-    font-size:3em;
+  width: 25%;
 }
 
-.ape h4{
-    text-align:center;
-    padding-bottom:2em;
-}
-.ContactForm h1{
-    text-align:center;
-    font-size:4em;
-}
-.form-contact{
-    border:4px solid $color-theme;
-    padding-left:9em;
-    padding-right:9em;
-    padding-bottom:6em;
+.ape h2 {
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
 }
 
-.horizontal{
-    display:flex;
-    justify-content:space-around;
-    
-    align-items:center;
-    padding-right:2em;
-    list-style:none;
- 
-}
-.horizontal li{
-padding-right:1em;
-}
-.horizontal label{
-padding-right:1em;
-padding-left:1em;
+.ape h4 {
+  text-align: center;
+  padding-bottom: 2em;
+  font-size: 1.5rem;
 }
 
+.form-contact {
+  form {
+    border: 2px solid $color-theme;
+    padding: 2.5rem;
 
+    label {
+      color: $color-theme;
+      margin-right: 2.5rem;
+      font-size: 1.5rem;
+    }
 
-.firstbox{
-   height:40px; 
-   width:250px;
-   border:2px solid $color-theme;
-   font-size:1.5em;
-}
-#comments{
-    border:2px solid $color-theme;
-    width:100%;
-    font-size:2em;
-    color:$color-theme;
-    &::placeholder{
-        color:$color-theme;
-    }
-   
-}
-.sr-only{
-    position:absolute;
-    width:1px;
-    height:1px;
-    padding:0;
-    margin:-1px;
-    overflow:hidden;
-    clip:rect(0,0,0,0)   
+    .horizontal {
+      display: flex;
+      justify-content: space-between;
 
+      .form-group {
+        display: flex;
+        flex: 0 0 30%;
+        align-items: center;
+
+        input {
+          height: 3.5rem;
+          flex: 1;
+          border: 2px solid $color-theme;
+        }
+      }
+    }
+
+    .form-group-large {
+      display: flex;
+      align-items: center;
+      margin-top: 2.5rem;
+
+      textarea {
+        border: 2px solid $color-theme;
+        width: 100%;
+        height: 20rem;
+
+        &::placeholder {
+          color: $color-theme;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .form-submit {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+
+      input {
+        border: 0;
+        background-color: $color-theme;
+        padding: 1rem 3.5rem;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
 }
-input[type=submit]{
-    float: right;
-    margin-right:1em;
-    background-color:$color-theme ;
-    color:white;
-    width:5em;
-    font-size:3.3rem;
- 
+
+@media only screen and (max-width: 900px) {
+  .form-contact form {
+    .horizontal {
+      flex-direction: column;
+
+      .form-group {
+        flex-wrap: wrap;
+
+        &:not(:last-child) {
+          margin-bottom: 2.5rem;
+        }
+
+        input {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
 }
-@media only screen and (max-width:1024px){
-    .horizontal{
-        flex-direction:column;
+
+@media only screen and (max-width: 750px) {
+  .contact {
+    margin-left: 2em;
+  }
+
+  .mapaddr {
+    flex-direction: column;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .ape {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    div {
+      flex: 0 0 30%;
     }
-    .horizontal li{
-        padding-bottom:5px;
-        padding-right:20px;
-    }
-}
-@media only screen and (max-width:750px){
-    .contact{
-        margin-left:2em;
-    }
-    
-    .mapaddr{
-       display:block;
-    }
-    .map{
-        width:100%;
-    }
-    .ape{
-        display:flex;
-        width:100%;
-        justify-content: space-evenly;
-        
-    }
-    .ape h2{
-        font-size:2em;
-    }
-    
-    .form-contact{
-        padding-left:1em;
-        padding-right:1em;
-    }
+  }
+
+  .ape h2 {
+    font-size: 2em;
+  }
+
+  .ape h2 {
+    font-size: 1.2em;
+  }
 }
