@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="./build/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -34,75 +35,99 @@
                 <span class="dot"></span>
             </label>
         </nav>
-    <main>
-       <section class="first-section">
-           <h1>Reserve Your Table</h1>
-           <div class="sect-01">
-           <img src="./assets/img/chef.jpg" alt="Chef Image right here" >
-           <h2>Useful Info</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis porro pariatur perferendis deserunt! Est, odio nihil et repellendus expedita, accusantium dolorem aliquid laboriosam minima fugiat dignissimos sit. Quae, inventore?
-           Totam aliquam distinctio dolor harum tempora ipsa provident officia perspiciatis, sint obcaecati quis vero, quibusdam voluptatem ducimus rem. Doloremque, illo eius? Sint quo fugit officiis! 
-           Vero dicta blanditiis dolorum adipisci. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           </p>
-           </div>
-           <div class="form-container">
-           <form action="./thank-you.html">
-               <label for="name">Name</label>
-               <input type="text" name="name" required><br>
-               <label for="name">Email</label> 
-               <input type="text" name="email" required><br>
-               <label for="date">Date</label>
-               <input type="text" name="date" required><br>
-            <label for="adults">Adults</label> 
-            <select name="adult" id="adults">
-               <option value="">1</option>
-               <option value="">2</option>
-               <option value="">3</option>
-               <option value="">4</option>
-               <option value="">5</option>
-               <option value="">6</option>
-               <option value="">7</option>
-               <option value="">8</option>
-               <option value="">9</option>
-               <option value="">10</option>
-            </select>   &nbsp;
-            <label for="children">Children</label>
-            <select name="child" id="children">
-               <option value="">1</option>
-               <option value="">2</option>
-               <option value="">3</option>
-               <option value="">4</option>
-               <option value="">5</option>
-               <option value="">6</option>
-               <option value="">7</option>
-               <option value="">8</option>
-               <option value="">9</option>
-               <option value="">10</option>
-            </select><br>
-               <label for="message">Message</label> 
-               <textarea name="text" id="message" ></textarea><br>
-                <a href="#0"><input type="submit" value="submit"></a>
-           </form>
-           </div>
-       </section>
-    </main>
-    <footer>
-        <div class="left-bar">
-            <a href="/">
-                <img src="./assets/svg/Logo.svg" alt="Logo" class="logo">
-            </a>
-            <span>@2018</span>
-        </div>
-        <div class="right-bar">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-        </div>
-    </footer>
+        <main>
+            <section class="reservation-section">
+                <h1>Reserve Your Table</h1>
+                <div class="useful-info">
+                    <img src="./assets/img/chef.jpg" alt="Chef Image right here">
+                    <div class="info">
+
+                        <h2>Useful Info</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis porro pariatur
+                            perferendis deserunt! Est, odio nihil et repellendus expedita, accusantium dolorem aliquid
+                            laboriosam minima fugiat dignissimos sit. Quae, inventore?
+                            Totam aliquam distinctio dolor harum tempora ipsa provident officia perspiciatis, sint
+                            obcaecati quis vero, quibusdam voluptatem ducimus rem. Doloremque, illo eius? Sint quo fugit
+                            officiis!
+                            Vero dicta blanditiis dolorum adipisci. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum.
+                        </p>
+                    </div>
+                </div>
+                    <form class="form-container" action="./thank-you.html">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="text" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="text" name="date" required>
+                        </div>
+                        <div class="quantity">
+                            <div class="form-group">
+                                <label for="adults">Adults</label>
+                                <select name="adult" id="adults">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="children">Children</label>
+                                <select name="child" id="children">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="text" id="message"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <div class="left-bar">
+                <a href="/">
+                    <img src="./assets/svg/Logo.svg" alt="Logo" class="logo">
+                </a>
+                <span>@2018</span>
+            </div>
+            <div class="right-bar">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </footer>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

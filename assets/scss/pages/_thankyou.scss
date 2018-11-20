@@ -1,59 +1,59 @@
 .thank-you {
-    text-align: center;
+  text-align: center;
+  padding: 10px;
+
+  button {
+    background-color: $color-theme;
     padding: 10px;
+    margin: 5px;
+    width: 50%;
 
-     button{
-        background-color: $color-theme;
-        padding: 10px;
-        margin: 5px;
-        width: 50%;
-       
 
-        a{
-            color: white;
-            font-size: 4.5em;
-            font-weight: bold;
-        }
-
-        @media (max-width: 820px){
-         
-            a{
-                font-size: 2.3rem;
-            }
-        }
+    a {
+      color: white;
+      font-size: 4.5em;
+      font-weight: bold;
     }
 
-    h1{
-        font-size: 5rem;
-        color: $paragraph-color;
-        text-align: center;
+    @media (max-width: 820px) {
+
+      a {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: $paragraph-color;
+    text-align: center;
+  }
+
+  img {
+    width: 20%;
+
+  }
+
+  p {
+    font-size: 2.9rem;
+    color: $paragraph-color;
+    text-align: center;
+
+  }
+
+
+  @media (max-width: 820px) {
+
+    h1 {
+      font-size: 2.5rem;
     }
 
-    img{
-        width: 20%;
-
+    img {
+      width: 15%;
     }
 
-    p{
-        font-size: 2.9rem;
-        color: $paragraph-color;
-        text-align: center;
-     
+    p {
+      font-size: 1.5rem;
     }
-
-
-    @media (max-width: 820px){
-         
-        h1{
-            font-size: 2.5rem;
-        }
-
-        img{
-            width: 15%;
-        }
-
-        p{
-            font-size: 1.5rem;
-        }
-    }
+  }
 }
